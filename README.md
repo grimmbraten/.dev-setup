@@ -45,9 +45,10 @@ touch ~Documents/bitbucket/.gitconfig
 
 ```zsh
 code ~Documents/bitbucket/.gitconfig
+```
 
-# Copy and replace with actual configuration
+```
 [user]
-	email = phil.bozeman@whitechapel.com
-	name = Phil Bozeman
+email = phil.bozeman@whitechapel.com
+name = Phil Bozeman
 ```
