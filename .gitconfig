@@ -1,3 +1,6 @@
 [user]
 	email = 79856585+grimmbraten@users.noreply.github.com
 	name = Erik Grimmbråten
+
+[includeIf "gitdir:~/Documents/bitbucket/"]
+    path = ~/Documents/bitbucket/.gitconfig

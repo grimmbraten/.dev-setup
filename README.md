@@ -1,6 +1,6 @@
-# .dev-setup
+# .setup
 
-My personal developer setup used to install new devices
+New Mac? No Problem! Follow these steps and you will be up and running with your new development environment in no time :)
 
 # How to setup a new Mac
 
@@ -27,4 +27,27 @@ ln -s ~/.setup/.gitconfig ~/.gitconfig
 
 ```zsh
 brew bundle --file ~/.setup/Brewfile
+```
+
+5. Create a bitbucket folder and a GitHub folder
+
+```zsh
+mkdir ~Documents/bitbucket && mkdir ~Documents/github
+```
+
+6. Create a Bitbucket specific .gitconfig file
+
+```zsh
+touch ~Documents/bitbucket/.gitconfig
+```
+
+7. Add user information in config file
+
+```zsh
+code ~Documents/bitbucket/.gitconfig
+
+# Copy and replace with actual configuration
+[user]
+	email = phil.bozeman@whitechapel.com
+	name = Phil Bozeman
 ```
