@@ -1,47 +1,45 @@
-# .setup
-
-New Mac? No Problem! Follow these steps and you will be up and running with your new development environment in no time :)
-
 # How to setup a new Mac
 
-1. Clone repo into new hidden directory.
+<img src="https://media.tenor.com/images/dbaf80394557f3d8a77c21216d5406ab/tenor.gif" width="100%" />
+
+**Step 1**: clone this repository into a hidden directory called `~/.dev-setup` on you new device.
 
 ```zsh
 git clone git@github.com:grimmbraten/.dev-setup.git ~/.dev-setup
 ```
 
-2. Create symbolic links in root directory to .setup files.
+**Step 2**: create symbolic links in your root directory to the `~/.setup/` files.
 
 ```zsh
 ln -s ~/.setup/.zshrc ~/.zshrc
 ln -s ~/.setup/.gitconfig ~/.gitconfig
 ```
 
-3. Install Homebrew.
+**Step 3**: install [Homebrew](https://brew.sh/).
 
 ```zsh
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-4. Install software listed in Brewfile.
+**Step 4**: install required software by executing the `~/.setup/Brewfile` Ruby file.
 
 ```zsh
 brew bundle --file ~/.setup/Brewfile
 ```
 
-5. Create a bitbucket folder and a GitHub folder
+**Step 5**: create a bitbucket folder and a GitHub folder within the `~Documents` directory.
 
 ```zsh
 mkdir ~Documents/bitbucket && mkdir ~Documents/github
 ```
 
-6. Create a Bitbucket specific .gitconfig file
+**Step 6**: create a Bitbucket specific `.gitconfig` file.
 
 ```zsh
 touch ~Documents/bitbucket/.gitconfig
 ```
 
-7. Add user information in config file
+**Step 7**: add account details in the config file.
 
 ```zsh
 code ~Documents/bitbucket/.gitconfig
